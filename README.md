@@ -75,3 +75,13 @@ Find a password for the `service` in the keychain.
 `service` - The string service name.
 
 Yields the string password, or `null` if an entry for the given service and account was not found.
+
+## Extra API
+
+In order to compatible for config file, such as webpack.config.js, async promise is not suitable. Thus,
+I wrapped a deasync feature so as to make all those api synchronous.
+
+##### getPassword(service, account)
+##### setPassword(service, account, password)
+##### deletePassword(service, account)
+##### findPassword(service)

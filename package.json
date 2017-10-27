@@ -1,17 +1,9 @@
 {
   "main": "./lib/keytar.js",
-  "name": "keytar",
-  "description": "Bindings to native Mac/Linux/Windows password APIs",
+  "name": "@xfe/keytar",
+  "description": "Provide Sync support and bindings to native Mac/Linux/Windows password APIs",
   "version": "4.0.4",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/atom/node-keytar.git"
-  },
-  "bugs": {
-    "url": "https://github.com/atom/node-keytar/issues"
-  },
-  "homepage": "http://atom.github.io/node-keytar",
   "keywords": [
     "keychain",
     "password",
@@ -35,6 +27,8 @@
     "node-gyp": "^3.6.0"
   },
   "dependencies": {
+    "commander": "^2.11.0",
+    "deasync-promise": "^1.0.1",
     "nan": "2.5.1"
   }
 }
